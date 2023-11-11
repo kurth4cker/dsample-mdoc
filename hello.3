@@ -1,0 +1,30 @@
+.Dd Nov 11, 2023
+.Dt HELLO 3
+.Os
+.Sh NAME
+.Nm hello
+.Nd print \(dqhello, world\(dq
+.Sh SYNOPSIS
+.In hello.h
+.Ft int
+.Fo hello
+.Fa "int C"
+.Fa "const char *prefix"
+.Fc
+.Sh DESCRIPTION
+The
+.Fn hello
+function prints
+.Qq hello, world .
+.Pp
+It accepts following arguments:
+.Bl -tag -width Ds
+.It Fa "int C"
+Non-zero if the output should be uppercase.
+.It Fa "const char *prefix"
+A prefix to precede the output or NULL for no prefix.
+.El
+.Sh RETURN VALUES
+The
+.Fn hello
+function return 1 on success, 0 on failure.
