@@ -1,0 +1,15 @@
+command checklist:
+    - Do I describe the calling syntax of the command?
+    - Do I describe each flag and argument of the command?
+    - Do I describe the command's operation?
+    - Do I describe the command's exit status?
+    - Do I describe referenced files and environment variables?
+
+function checklist:
+    - Do I describe the preprocessing and linking information?
+    - Do I describe the calling syntax of each function and variable?
+    - Do I describe the type of each function and variable?
+    - Do I describe each argument in each calling syntax?
+    - Do I describe each function's operation?
+    - Do I describe each function's side effects?
+
