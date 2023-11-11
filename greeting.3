@@ -1,0 +1,47 @@
+.Dd Nov 12, 2023
+.Dt GREETING 3
+.Os
+.Sh NAME
+.Nm hello ,
+.Nm hi
+.Nd print greeting messages
+.Sh SYNOPSIS
+.In hello.h
+.In hi.h
+.Ft int
+.Fo hello
+.Fa "int C"
+.Fa "const char *prefix"
+.Fc
+.Ft void
+.Fn hi
+.Sh DESCRIPTION
+The
+.Fn hi
+and
+.Fn hello
+functions print out greeting messages.
+.Pp
+The
+.Fn hi
+function accepts no arguments and prints out
+.Qq hello, world .
+.Pp
+The
+.Fn hello
+function accepts a value
+.Fa C ,
+which if non-zero indicates output should be uppercase; and
+.Fa prefix ,
+which, if non-NULL, shall be prefixed to the output.
+The
+.Fa prefix
+argument, if non-NULL, must be nil-terminated.
+.Sh RETURN VALUES
+The
+.Fn hi
+function does not return a value.
+.Pp
+The
+.Fn hello
+function returns 1 on success, 0 on failure.
